@@ -12,8 +12,8 @@ BEGIN
     POPUP ""
     BEGIN
         MENUITEM SEPARATOR
-        MENUITEM "&ضبط التاريخ/الوقت", ID_SHELL_CMD_ADJUST_DAT
-        MENUITEM "&تخصيص إشعارات...", ID_SHELL_CMD_CUST_NOTIF
+        MENUITEM "ضبط التاريخ/الوقت", ID_SHELL_CMD_ADJUST_DAT
+        MENUITEM "تخصيص إشعارات...", ID_SHELL_CMD_CUST_NOTIF
         MENUITEM SEPARATOR
         MENUITEM "رتب النوافذ بالتتابع", ID_SHELL_CMD_CASCADE_WND
         MENUITEM "بلاط النوافذ أفقيا", ID_SHELL_CMD_TILE_WND_H
@@ -83,93 +83,93 @@ END
 
 IDD_TASKBARPROP_STARTMENU DIALOGEX 0, 0, 252, 218
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Start Menu"
+CAPTION "قائمة البدأ"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     CONTROL "", IDC_TASKBARPROP_STARTMENU_BITMAP, "Static", SS_BITMAP | SS_SUNKEN,7, 7, 183, 108
-    AUTORADIOBUTTON "&Start menu", IDC_TASKBARPROP_STARTMENU, 7, 135, 105, 10
-    LTEXT "This menu style gives you easy access to your folders, favorite programs, and search.", IDC_TASKBARPROP_STARTMENUMODERNTEXT, 20, 145, 150, 24
-    PUSHBUTTON "&Customize...", IDC_TASKBARPROP_STARTMENUCUST, 192, 132, 53, 14
-    AUTORADIOBUTTON "Classic Start &menu", IDC_TASKBARPROP_STARTMENUCLASSIC, 7, 175, 105, 10
-    LTEXT "This menu style gives you the classic look and functionality", IDC_TASKBARPROP_STARTMENUCLASSICTEXT, 20, 185, 150, 24
-    PUSHBUTTON "&Customize...", IDC_TASKBARPROP_STARTMENUCLASSICCUST, 192, 172, 53, 14
+    AUTORADIOBUTTON "البدأ", IDC_TASKBARPROP_STARTMENU, 7, 135, 105, 10
+    LTEXT "يتيح لك نمط القائمة هذا الوصول بسهولة إلى مجلداتك وبرامجك المفضلة وعمليات البحث.", IDC_TASKBARPROP_STARTMENUMODERNTEXT, 20, 145, 150, 24
+    PUSHBUTTON "عدل", IDC_TASKBARPROP_STARTMENUCUST, 192, 132, 53, 14
+    AUTORADIOBUTTON "قائمة ابدأ الكلاسيكية", IDC_TASKBARPROP_STARTMENUCLASSIC, 7, 175, 105, 10
+    LTEXT "يمنحك نمط القائمة هذا المظهر والوظيفة الكلاسيكية", IDC_TASKBARPROP_STARTMENUCLASSICTEXT, 20, 185, 150, 24
+    PUSHBUTTON "عدل", IDC_TASKBARPROP_STARTMENUCLASSICCUST, 192, 172, 53, 14
 END
 
 IDD_TASKBARPROP_NOTIFY DIALOGEX 0, 0, 252, 218
 STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "Notification Area"
+CAPTION "منطقة إشعارات"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     CONTROL "", IDC_TASKBARPROP_NOTIFICATIONBITMAP, "Static", SS_BITMAP | SS_SUNKEN | SS_CENTERIMAGE, 12, 6, 229, 24
-    GROUPBOX "Icons", IDC_STATIC, 6, 36, 240, 56
-    LTEXT "You can keep the notification area uncluttered by hiding icons that you have not clicked recently.", IDC_STATIC, 13, 48, 223, 16
-    AUTOCHECKBOX "&Hide inactive icons", IDC_TASKBARPROP_HIDEICONS, 13, 70, 125, 10
-    PUSHBUTTON "&Customize...", IDC_TASKBARPROP_ICONCUST, 188, 70, 50, 14
-    GROUPBOX "System icons", IDC_STATIC, 6, 99, 240, 56
-    LTEXT "Select which system icons to always show.", IDC_STATIC, 13, 113, 223, 8
-    AUTOCHECKBOX "Cloc&k", IDC_TASKBARPROP_CLOCK, 13, 127, 80, 10
-    AUTOCHECKBOX "Show seconds", IDC_TASKBARPROP_SECONDS, 120, 127, 80, 10, WS_DISABLED
-    AUTOCHECKBOX "&Desktop", IDC_TASKBARPROP_DESKTOP, 13, 140, 80, 10
+    GROUPBOX "أيقونات", IDC_STATIC, 6, 36, 240, 56
+    LTEXT "يمكنك إبقاء منطقة الإعلام مرتبة عن طريق إخفاء الرموز التي لم تنقر عليها مؤخرًا.", IDC_STATIC, 13, 48, 223, 16
+    AUTOCHECKBOX "إخفاء الرموز غير النشطة", IDC_TASKBARPROP_HIDEICONS, 13, 70, 125, 10
+    PUSHBUTTON "عدل", IDC_TASKBARPROP_ICONCUST, 188, 70, 50, 14
+    GROUPBOX "أيقونات النظام", IDC_STATIC, 6, 99, 240, 56
+    LTEXT "حدد أيقونات النظام التي تريد إظهارها دائمًا.", IDC_STATIC, 13, 113, 223, 8
+    AUTOCHECKBOX "ساعة", IDC_TASKBARPROP_CLOCK, 13, 127, 80, 10
+    AUTOCHECKBOX "عرض ثواني", IDC_TASKBARPROP_SECONDS, 120, 127, 80, 10, WS_DISABLED
+    AUTOCHECKBOX "سطح المكتب", IDC_TASKBARPROP_DESKTOP, 13, 140, 80, 10
 END
 
 IDD_NOTIFICATIONS_CUSTOMIZE DIALOGEX 0, 0, 232, 240
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_VISIBLE | WS_DLGFRAME
 EXSTYLE WS_EX_CONTEXTHELP
-CAPTION "Customize Notifications"
+CAPTION "تخصيص الإشعارات"
 FONT 8, "MS Shell Dlg"
 BEGIN
-    LTEXT            "ReactOS displays icons for active and urgent notifications, and hides inactive ones. You can change this behavior for items in the list below.", IDC_STATIC, 6, 6, 220, 30
-    LTEXT            "Select an item, then choose its notification behavior:", IDC_STATIC, 6, 40, 220, 10
+    LTEXT            "يعرض ReactOS أيقونات للإشعارات النشطة والعاجلة، ويخفي الإشعارات غير النشطة. يمكنك تغيير هذا السلوك للعناصر الموجودة في القائمة أدناه.", IDC_STATIC, 6, 6, 220, 30
+    LTEXT            "حدد عنصرًا، ثم اختر سلوك الإشعارات الخاص به:", IDC_STATIC, 6, 40, 220, 10
     CONTROL          "", IDC_NOTIFICATION_LIST, "SysListView32", WS_CLIPSIBLINGS | WS_BORDER | 0x00008005, 6, 50, 220, 128
     COMBOBOX         IDC_NOTIFICATION_BEHAVIOUR, 103, 178, 78, 200, CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_CLIPSIBLINGS
-    PUSHBUTTON       "&Restore Defaults", IDC_TASKBARPROP_NOTIREST, 164, 188, 62, 14
+    PUSHBUTTON       "استعادة الضبط الافتراضي", IDC_TASKBARPROP_NOTIREST, 164, 188, 62, 14
     DEFPUSHBUTTON    "OK", IDOK, 122, 220, 50, 14
     PUSHBUTTON       "Cancel", IDCANCEL, 176, 220, 50, 14
 END
 
 IDD_CLASSICSTART_CUSTOMIZE DIALOGEX 0, 0, 232, 240, 0
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CONTEXTHELP | WS_POPUPWINDOW | WS_VISIBLE | WS_DLGFRAME
-CAPTION "Customize Classic Start Menu"
+CAPTION "تخصيص قائمة ابدأ الكلاسيكية"
 FONT 8, "MS Shell Dlg"
 BEGIN
-    GROUPBOX         "Start menu", IDC_STATIC, 8, 7, 218, 114
+    GROUPBOX         "قائمة البدأ", IDC_STATIC, 8, 7, 218, 114
     ICON             IDI_STARTMENU2, IDC_STATIC, 19, 17, 20, 20
-    LTEXT            "You can customize your Start menu by adding or removing items.", IDC_STATIC, 48, 17, 108, 39
-    PUSHBUTTON       "A&dd...", IDC_CLASSICSTART_ADD, 162, 18, 53, 14
-    PUSHBUTTON       "&Remove...", IDC_CLASSICSTART_REMOVE, 162, 33, 53, 14
-    PUSHBUTTON       "Ad&vanced", IDC_CLASSICSTART_ADVANCED, 162, 49, 53, 14
-    PUSHBUTTON       "&Sort", IDC_CLASSICSTART_SORT, 162, 65, 53, 14
+    LTEXT            "يمكنك تخصيص قائمة "ابدأ" الخاصة بك عن طريق إضافة عناصر أو إزالتها.", IDC_STATIC, 48, 17, 108, 39
+    PUSHBUTTON       "أضف...", IDC_CLASSICSTART_ADD, 162, 18, 53, 14
+    PUSHBUTTON       "أمسح...", IDC_CLASSICSTART_REMOVE, 162, 33, 53, 14
+    PUSHBUTTON       "متقدم", IDC_CLASSICSTART_ADVANCED, 162, 49, 53, 14
+    PUSHBUTTON       "فرز", IDC_CLASSICSTART_SORT, 162, 65, 53, 14
     ICON             IDI_RECYCLEBIN, IDC_STATIC, 20, 85, 20, 20
-    LTEXT            "To remove records of recently accessed documents, programs, and Web sites, click Clear.", IDC_STATIC, 49, 85, 108, 33
-    PUSHBUTTON       "&Clear", IDC_CLASSICSTART_CLEAR, 162, 94, 53, 14
-    LTEXT            "Advanced S&tart menu options:", IDC_STATIC, 8, 129, 150, 8
-    CONTROL          "StartMenuSe&ttings", IDC_CLASSICSTART_SETTINGS, "SysTreeView32", TVS_HASBUTTONS | WS_BORDER, 8, 139, 218, 72, WS_EX_CLIENTEDGE
+    LTEXT            "لإزالة سجلات المستندات والبرامج ومواقع الويب التي تم الوصول إليها مؤخرًا، انقر فوق مسح.", IDC_STATIC, 49, 85, 108, 33
+    PUSHBUTTON       "مسح", IDC_CLASSICSTART_CLEAR, 162, 94, 53, 14
+    LTEXT            "خيارات قائمة ابدأ المتقدمة:", IDC_STATIC, 8, 129, 150, 8
+    CONTROL          "إعدادات قائمة البداية", IDC_CLASSICSTART_SETTINGS, "SysTreeView32", TVS_HASBUTTONS | WS_BORDER, 8, 139, 218, 72, WS_EX_CLIENTEDGE
     DEFPUSHBUTTON    "OK", IDOK, 122, 220, 50, 14
     PUSHBUTTON       "Cancel", IDCANCEL, 176, 220, 50, 14
 END
 
 IDD_FILENAME_WARNING DIALOGEX 0, 0, 272, 81, 0
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUPWINDOW | WS_DLGFRAME
-CAPTION "File Name Warning"
+CAPTION "تحذير من اسم الملف"
 FONT 8, "MS Shell Dlg"
 BEGIN
-    DEFPUSHBUTTON    "&Ignore", IDIGNORE, 215, 60, 50, 14
-    PUSHBUTTON       "&Rename", IDC_FILE_RENAME, 159, 60, 50, 14
+    DEFPUSHBUTTON    "تجاهل", IDIGNORE, 215, 60, 50, 14
+    PUSHBUTTON       "إعادة تسمية", IDC_FILE_RENAME, 159, 60, 50, 14
     LTEXT            "", IDC_STATIC, 7, 51, 258, 1, NOT WS_GROUP
-    AUTOCHECKBOX     "&Don't perform this check at startup", IDC_NOTCHECK, 7, 62, 139, 10
+    AUTOCHECKBOX     "لا تقم بإجراء هذا الفحص عند بدء التشغيل", IDC_NOTCHECK, 7, 62, 139, 10
     ICON             32515, IDC_STATIC, 7, 7, 21, 20
-    LTEXT            "There is a file or folder on your computer called %s which could cause certain applications to not function correctly.  Renaming it to %s would solve this problem.  Would you like to rename it now?", IDC_STATIC, 34, 7, 224, 37
+    LTEXT            "يوجد ملف أو مجلد على جهاز الكمبيوتر الخاص بك يسمى %s والذي قد يتسبب في عدم عمل بعض التطبيقات بشكل صحيح.  إعادة تسميته إلى %s ستحل هذه المشكلة.  هل ترغب في إعادة تسميته الآن؟", IDC_STATIC, 34, 7, 224, 37
 END
 
 IDD_MODERNSTART_ADVANCED DIALOGEX 0, 0, 251, 198, 0
 STYLE DS_SETFONT | WS_CAPTION | WS_CHILD | WS_DISABLED
-CAPTION "Advanced"
+CAPTION "متقدم"
 FONT 8, "MS Shell Dlg"
 BEGIN
-    GROUPBOX         "Start menu settings ", IDC_STATIC, 7, 7, 238, 42
-    AUTOCHECKBOX     "&Open submenus when I pause on them with my mouse", IDC_AUTOOPEN, 14, 21, 224, 10
-    AUTOCHECKBOX     "Highlight &newly installed programs", IDC_HIGHLIGHT, 14, 35, 224, 10
-    LTEXT            "Start &menu items:", IDC_STATIC, 7, 53, 238, 8
+    GROUPBOX         "إعدادات قائمة ابدأ ", IDC_STATIC, 7, 7, 238, 42
+    AUTOCHECKBOX     "فتح القوائم الفرعية عندما أتوقف عليها باستخدام الماوس", IDC_AUTOOPEN, 14, 21, 224, 10
+    AUTOCHECKBOX     "تسليط الضوء على البرامج المثبتة حديثا", IDC_HIGHLIGHT, 14, 35, 224, 10
+    LTEXT            "عناصر قائمة ابدأ:", IDC_STATIC, 7, 53, 238, 8
     CONTROL          "StartMenuSe&ttings", IDC_ITEMS, "SysTreeView32", WS_BORDER | 0x00000001, 7, 63, 238, 67, WS_EX_CLIENTEDGE
     GROUPBOX         "Recent documents ", IDC_STATIC, 7, 133, 238, 56
     LTEXT            "Select this option to provide quick access to the documents you opened most recently.  Clearing this list does not delete the documents.", IDC_STATIC, 14, 144, 224, 21
