@@ -1,38 +1,45 @@
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+/*
+ * PROJECT:     ReactOS Explorer
+ * LICENSE:     LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later)
+ * PURPOSE:     Arabic (Egypt) resource file
+ * TRANSLATOR:  Copyright 2024 Mahmoud Ahmed <tabs90600@gmail.com>
+ */
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ARABIC_EGYPT
 
 /* String Tables */
 
 /* Default settings */
 STRINGTABLE
 BEGIN
-    IDS_APPTITLE "ReactOS - Welcome"
+    IDS_APPTITLE "ReactOS - مرحبًا"
     IDS_DEFAULT_TOPIC_TITLE "ReactOS"
-    IDS_DEFAULT_TOPIC_DESC "Welcome to ReactOS Operating System.\n\nClick a topic on the left."
+    IDS_DEFAULT_TOPIC_DESC "مرحبًا بك في نظام التشغيل ReactOS.\n\nانقر فوق أحد المواضيع الموجودة على اليسار."
     IDS_FONTNAME "Tahoma"
-    IDS_CHECKTEXT "&Show this dialog again"
-    IDS_CLOSETEXT "&Exit"
+    IDS_CHECKTEXT "أظهر مربع الحوار هذا مرة أخرى"
+    IDS_CLOSETEXT "خروج"
 END
 
 /* Topic buttons */
 STRINGTABLE
 BEGIN
-    IDS_TOPIC_BUTTON0 "&Install ReactOS"
-    IDS_TOPIC_BUTTON1 "&Browse this CD"
-    IDS_TOPIC_BUTTON2 "&Exit"
+    IDS_TOPIC_BUTTON0 "قم بتثبيت ReactOS"
+    IDS_TOPIC_BUTTON1 "تصفح هذا القرص المضغوط"
+    IDS_TOPIC_BUTTON2 "مخرج"
 END
 
 /* Topic titles */
 STRINGTABLE
 BEGIN
-    IDS_TOPIC_TITLE0 "Install ReactOS"
-    IDS_TOPIC_TITLE1 "Browse this CD"
-    IDS_TOPIC_TITLE2 "Exit"
+    IDS_TOPIC_TITLE0 "قم بتثبيت ReactOS"
+    IDS_TOPIC_TITLE1 "تصفح هذا القرص المضغوط"
+    IDS_TOPIC_TITLE2 "مخرج"
 END
 
 /* Topic descriptions */
 STRINGTABLE
 BEGIN
-    IDS_TOPIC_DESC0 "Create a new ReactOS installation on your computer or upgrade an existing installation."
-    IDS_TOPIC_DESC1 "Browse the CD."
-    IDS_TOPIC_DESC2 "Click to exit this application."
+    IDS_TOPIC_DESC0 "قم بإنشاء تثبيت ReactOS جديد على جهاز الكمبيوتر الخاص بك أو قم بترقية التثبيت الحالي."
+    IDS_TOPIC_DESC1 "تصفح القرص المضغوط."
+    IDS_TOPIC_DESC2 "انقر للخروج من هذا التطبيق."
 END
