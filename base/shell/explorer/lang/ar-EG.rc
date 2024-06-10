@@ -170,49 +170,49 @@ BEGIN
     AUTOCHECKBOX     "فتح القوائم الفرعية عندما أتوقف عليها باستخدام الماوس", IDC_AUTOOPEN, 14, 21, 224, 10
     AUTOCHECKBOX     "تسليط الضوء على البرامج المثبتة حديثا", IDC_HIGHLIGHT, 14, 35, 224, 10
     LTEXT            "عناصر قائمة ابدأ:", IDC_STATIC, 7, 53, 238, 8
-    CONTROL          "StartMenuSe&ttings", IDC_ITEMS, "SysTreeView32", WS_BORDER | 0x00000001, 7, 63, 238, 67, WS_EX_CLIENTEDGE
-    GROUPBOX         "Recent documents ", IDC_STATIC, 7, 133, 238, 56
-    LTEXT            "Select this option to provide quick access to the documents you opened most recently.  Clearing this list does not delete the documents.", IDC_STATIC, 14, 144, 224, 21
-    AUTOCHECKBOX     "List my most &recently opened documents", IDC_RECENTLY, 14, 168, 147, 10
-    PUSHBUTTON       "&Clear List", IDC_CLEAR, 182, 168, 55, 14
+    CONTROL          "إعدادات قائمة البداية", IDC_ITEMS, "SysTreeView32", WS_BORDER | 0x00000001, 7, 63, 238, 67, WS_EX_CLIENTEDGE
+    GROUPBOX         "الوثائق الأخيرة ", IDC_STATIC, 7, 133, 238, 56
+    LTEXT            "حدد هذا الخيار لتوفير وصول سريع إلى المستندات التي قمت بفتحها مؤخرًا.  لا يؤدي مسح هذه القائمة إلى حذف المستندات.", IDC_STATIC, 14, 144, 224, 21
+    AUTOCHECKBOX     "قم بإدراج المستندات التي تم فتحها مؤخرًا ومؤخرًا", IDC_RECENTLY, 14, 168, 147, 10
+    PUSHBUTTON       "امسح القائمة", IDC_CLEAR, 182, 168, 55, 14
 END
 
 IDD_MODERNSTART_GENERAL DIALOGEX 0, 0, 251, 198
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_DLGFRAME
-CAPTION "General"
+CAPTION "عام"
 FONT 8, "MS Shell Dlg"
 BEGIN
-    GROUPBOX         "Select an icon size for programs ", IDC_STATIC, 7, 7, 238, 37
+    GROUPBOX         "حدد حجم أيقونة البرامج ", IDC_STATIC, 7, 7, 238, 37
     ICON             IDC_LARGEICON, 17, 18, 20, 20, SS_CENTERIMAGE
     ICON             IDC_SMALLICON, 151, 18, 20, 20, SS_CENTERIMAGE
-    AUTORADIOBUTTON  "&Large icons", IDC_CHOOSELARGE, 43, 25, 53, 10
-    AUTORADIOBUTTON  "&Small icons", IDC_CHOOSESMALL, 177, 25, 51, 10, NOT WS_TABSTOP
-    GROUPBOX         "Programs ", IDC_STATIC, 7, 49, 238, 70
-    LTEXT            "The Start menu contains shortcuts to the programs you use most often.  Clearing the list of shortcuts does not delete the programs.", IDC_STATIC, 14, 63, 224, 20
-    LTEXT            "&Number of programs on Start menu:", IDC_STATIC, 14, 86, 112, 8
+    AUTORADIOBUTTON  "أيقونات كبيرة", IDC_CHOOSELARGE, 43, 25, 53, 10
+    AUTORADIOBUTTON  "أيقونات صغيرة", IDC_CHOOSESMALL, 177, 25, 51, 10, NOT WS_TABSTOP
+    GROUPBOX         "البرامج ", IDC_STATIC, 7, 49, 238, 70
+    LTEXT            "تحتوي القائمة "ابدأ" على اختصارات للبرامج التي تستخدمها غالبًا.  لا يؤدي مسح قائمة الاختصارات إلى حذف البرامج.", IDC_STATIC, 14, 63, 224, 20
+    LTEXT            "عدد البرامج في قائمة ابدأ:", IDC_STATIC, 14, 86, 112, 8
     EDITTEXT         IDC_NUMBEROFPROGRAMS, 133, 84, 27, 12, ES_LEFT | ES_RIGHT | ES_NUMBER
     CONTROL          "", IDC_NUMBERUPDOWN, "msctls_updown32", WS_BORDER | 0x000000B6, 160, 84, 11, 12
-    PUSHBUTTON       "&Clear List", IDC_CLEARLIST, 182, 98, 57, 14
-    GROUPBOX         "Show on Start menu ", IDC_STATIC, 7, 126, 238, 63
-    AUTOCHECKBOX     "&Internet:", IDC_SHOWINTERNET, 14, 140, 42, 10
+    PUSHBUTTON       "مسح القائمة", IDC_CLEARLIST, 182, 98, 57, 14
+    GROUPBOX         "اعرض في قائمة ابدأ ", IDC_STATIC, 7, 126, 238, 63
+    AUTOCHECKBOX     "إنترنت:", IDC_SHOWINTERNET, 14, 140, 42, 10
     COMBOBOX         IDC_INTERNETDEFAULTAPP, 98, 138, 140, 200, CBS_DROPDOWNLIST | WS_VSCROLL
-    AUTOCHECKBOX     "&E-mail:", IDC_SHOWEMAIL, 14, 157, 37, 10
+    AUTOCHECKBOX     "بريد إلكتروني:", IDC_SHOWEMAIL, 14, 157, 37, 10
     COMBOBOX         IDC_EMAILDEFAULTAPP, 98, 155, 140, 200, CBS_DROPDOWNLIST | WS_VSCROLL
 END
 
 STRINGTABLE
 BEGIN
-    IDS_START "Start"
-    IDS_PROPERTIES "P&roperties"
-    IDS_OPEN_ALL_USERS "O&pen All Users"
-    IDS_EXPLORE_ALL_USERS "E&xplore All Users"
-    IDS_STARTUP_ERROR "The system cannot start explorer because the registry is corrupted or unavailable."
+    IDS_START "أبدأ"
+    IDS_PROPERTIES "الخصائص"
+    IDS_OPEN_ALL_USERS "افتح كافة المستخدمين"
+    IDS_EXPLORE_ALL_USERS "استكشاف كافة المستخدمين"
+    IDS_STARTUP_ERROR "لا يمكن للنظام بدء تشغيل المستكشف لأن السجل تالف أو غير متوفر."
 END
 
 STRINGTABLE
 BEGIN
-    IDS_TASKBAR_STARTMENU_PROP_CAPTION "Taskbar and Start Menu"
-    IDS_RESTORE_ALL "&Show Open Windows"
-    IDS_TRAYWND_UNDO_CASCADE "&Undo Cascade"
-    IDS_TRAYWND_UNDO_TILE "&Undo Tile"
+    IDS_TASKBAR_STARTMENU_PROP_CAPTION "شريط المهام وقائمة ابدأ"
+    IDS_RESTORE_ALL "إظهار النوافذ المفتوحة"
+    IDS_TRAYWND_UNDO_CASCADE "التراجع عن التتالي"
+    IDS_TRAYWND_UNDO_TILE "التراجع عن البلاط"
 END
