@@ -1,0 +1,72 @@
+LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
+
+STRINGTABLE
+BEGIN
+    IDS_HELP "يعرض أو يعدل قوائم التحكم بالوصول (ACLs) حقت الملفات\n\n\
+CACLS اسم_الملف [/T] [/E] [/C] [/G المستخدم:الصلاحيات [...]] [/R المستخدم [...]]\n\
+               [/P المستخدم:الصلاحيات [...]] [/D المستخدم [...]]\n\
+   filename      يعرض الـ ACLs.\n\
+   /T            يغير الـ ACLs حقت الملفات المحددة في\n\
+                 المجلد الحالي وكل المجلدات اللي داخله.\n\
+   /E            يعدل الـ ACL بدل ما يستبدلها.\n\
+   /C            يكمل حتى لو فيه أخطاء في الوصول.\n\
+   /G user:perm  يعطي صلاحيات للمستخدم.\n\
+                 الصلاحيات تقدر تكون: R  قراءة\n\
+                              W  كتابة\n\
+                              C  تغيير (كتابة)\n\
+                              F  تحكم كامل\n\
+   /R user       يشيل صلاحيات المستخدم المحدد (يشتغل بس مع /E).\n\
+   /P user:perm  يستبدل صلاحيات المستخدم المحدد.\n\
+                 الصلاحيات تقدر تكون: N  مافيه\n\
+                              R  قراءة\n\
+                              W  كتابة\n\
+                              C  تغيير (كتابة)\n\
+                              F  تحكم كامل\n\
+   /D user       يمنع المستخدم من الوصول.\n\
+تقدر تستخدم علامات الـ Wildcards عشان تحدد أكثر من ملف في الأمر الواحد.\n\
+تقدر تحدد أكثر من مستخدم في الأمر الواحد.\n\n\
+الاختصارات:\n\
+   CI - وراثة الحاوية.\n\
+        الـ ACE بينورث للمجلدات.\n\
+   OI - وراثة الكائن.\n\
+        الـ ACE بينورث للملفات.\n\
+   IO - الوراثة بس.\n\
+        الـ ACE مو موجود للملف/المجلد ذا.\n"
+    IDS_ABBR_CI "(CI)"
+    IDS_ABBR_OI "(OI)"
+    IDS_ABBR_IO "(IO)"
+    IDS_ABBR_FULL "F"
+    IDS_ABBR_READ "R"
+    IDS_ABBR_WRITE "W"
+    IDS_ABBR_CHANGE "C"
+    IDS_ABBR_NONE "N"
+    IDS_ALLOW ""
+    IDS_DENY "(منع)"
+    IDS_SPECIAL_ACCESS "(صلاحية خاصة:)"
+    IDS_GENERIC_READ "GENERIC_READ"
+    IDS_GENERIC_WRITE "GENERIC_WRITE"
+    IDS_GENERIC_EXECUTE "GENERIC_EXECUTE"
+    IDS_GENERIC_ALL "GENERIC_ALL"
+    IDS_FILE_GENERIC_EXECUTE "FILE_GENERIC_EXECUTE"
+    IDS_FILE_GENERIC_READ "FILE_GENERIC_READ"
+    IDS_FILE_GENERIC_WRITE "FILE_GENERIC_WRITE"
+    IDS_FILE_READ_DATA "FILE_READ_DATA"
+    IDS_FILE_WRITE_DATA "FILE_WRITE_DATA"
+    IDS_FILE_APPEND_DATA "FILE_APPEND_DATA"
+    IDS_FILE_READ_EA "FILE_READ_EA"
+    IDS_FILE_WRITE_EA "FILE_WRITE_EA"
+    IDS_FILE_EXECUTE "FILE_EXECUTE"
+    IDS_FILE_DELETE_CHILD "FILE_DELETE_CHILD"
+    IDS_FILE_READ_ATTRIBUTES "FILE_READ_ATTRIBUTES"
+    IDS_FILE_WRITE_ATTRIBUTES "FILE_WRITE_ATTRIBUTES"
+    IDS_MAXIMUM_ALLOWED "MAXIMUM_ALLOWED"
+    IDS_ACCESS_SYSTEM_SECURITY "ACCESS_SYSTEM_SECURITY"
+    IDS_SPECIFIC_RIGHTS_ALL "SPECIFIC_RIGHTS_ALL"
+    IDS_STANDARD_RIGHTS_REQUIRED "STANDARD_RIGHTS_REQUIRED"
+    IDS_SYNCHRONIZE "SYNCHRONIZE"
+    IDS_WRITE_OWNER "WRITE_OWNER"
+    IDS_WRITE_DAC "WRITE_DAC"
+    IDS_READ_CONTROL "READ_CONTROL"
+    IDS_DELETE "DELETE"
+    IDS_STANDARD_RIGHTS_ALL "STANDARD_RIGHTS_ALL"
+END
